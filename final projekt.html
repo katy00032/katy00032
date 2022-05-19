@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Volkswagen 🚘</title>
+ <style>
+     body{
+         background:rgb(247, 243, 201);
+     }
+     h1{
+         text-align: center;
+         color: rgb(243, 16, 125);
+     }
+     h2 {
+         text-align: center;
+         border: 1px solid green;
+         padding: 15px;
+        font-size: 18px ;
+        border-radius: 4px;
+        color: rgb(218, 9, 246);
+     }
+     img{
+         display: block;
+         margin: 0 auto;
+         max-width: 100%;
+         border-radius: 10px;
+     }
+     p{
+         line-height: 1.5;
+         font-size: 12px;
+         margin: 20px 0 15px;
+     }
+     .learn-more{
+         display: block;
+         margin-top: 10px;
+         color: blueviolet;
+         text-decoration: none;
+     }
+     button{
+         display: block;
+         margin: 30px auto;
+         background: rebeccapurple;
+         color: antiquewhite;
+         font-size: 25px;
+         padding: 20px 15px;
+         border: none;
+         border-radius: 9px;
+         box-shadow: 5px 5px 5px rgda(0, 0, 0, 0,5);
+         transition: all 200ms ease-in-out;
+     }
+     button:hover {
+         opacity: 0.8;
+         cursor: pointer;
+    
+         .container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding:80px;
+}
+     }
+     .avto {
+     text-align: center;
+     }
+
+ </style>
+</head>
+  <body>
+      <div class="container">
+    <h1>I love Volkswagen</h1>
+    <h2>Car production history</h2>
+    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/034/704/original/11773.jpg?1652986563"
+    />
+    <p>
+        The concern originates from the company founded by Ferdinand Porsche in 1937 in Berlin,
+         the Gesellschaft zur Vorbereitung des Deutschen Volkswagens mbH (Society for the Preparation of the German People's Car under the National Socialist organization Strength Through Joy). 
+         In early 1938, construction began on the first Volkswagen plant in Wolfsburg; 
+         On September 16 of the same year, the company was renamed "Volkswagenwerk GmbH". After World War II, the factories came under the control of the British military administration.
+  </p>
+  <a href="https://wikipedia.tel/Volkswagen_(%D0%BA%D0%BE%D0%BD%D1%86%D0%B5%D1%80%D0%BD)"
+  target="_blank" class="learn-more">
+      Learn more on Wikipedia
+  </a>
+  <button class="buy-button" >
+    🤝  Buy Volkswagen
+  </button>
+  <p class="avto">
+
+  This page was built by
+  <a href="https://www.instagram.com/kateryna_vanina/" target="_blank">
+Kateryna Vanina  
+</a>
+  </p>
+</div>
+<script>
+    function buy () {
+    let neme = prompt("What is your name?");
+    let email = prompt("What is your email address?");
+    let car = prompt("What is your favorite car?");
+
+    alert(
+        "Thank you" +
+     name + 
+    "! We'll be in touch by email, meanwhile have lot of car!"  +
+    car
+    );
+    }
+    let buyButton = document.querySelector(".buy-button");
+    buyButton.addEventListener("click", buy);
+</script>
+  </body>
+</html>
